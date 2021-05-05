@@ -16,35 +16,47 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <h1>Zurich</h1>
-        <ul>
-          <li>Tuesday 12:31</li>
-          <li>cloudy</li>
-        </ul>
-        <div class="row">
-          <ul class="col-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="cloudy"
-            />
-            18 °C | °F
-          </ul>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="basic-info">
+            <h1>Zurich</h1>
+            <ul>
+              <li>Tuesday 12:31</li>
+              <li>cloudy</li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="cloudy"
+                  class="float-left"
+                />
+                <div class="float-left">
+                  <strong>18</strong
+                  ><span class="units">°C | <a href="">°F</a></span>
+                </div>
+              </div>
+            </div>
 
-          <ul class="col-6">
-            <li>Precipitation: 0%</li>
-            <li>Humidity: 34%</li>
-            <li>Wind: 32 km/h</li>
-          </ul>
+            <div class="col-6">
+              <ul>
+                <li>Precipitation: 0%</li>
+                <li>Humidity: 34%</li>
+                <li>Wind: 32 km/h</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <small>
+        <footer>
           <a
             href="https://github.com/Carina-Kerou/vanilla-weather-app"
             target="_blank"
             >Open Source Code</a
           >
           by Carina Kerou
-        </small>
+        </footer>
       </div>
     </div>
     <script src="src/index.js"></script>
