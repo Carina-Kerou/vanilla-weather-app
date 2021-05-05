@@ -11,6 +11,7 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -19,10 +20,10 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="basic-info">
-            <h1>Zurich</h1>
+            <h1 id="city"></h1>
             <ul>
               <li>Tuesday 12:31</li>
-              <li>cloudy</li>
+              <li class="description" id="description"></li>
             </ul>
           </div>
           <div class="row">
@@ -34,7 +35,7 @@
                   class="float-left"
                 />
                 <div class="float-left">
-                  <strong>18</strong
+                  <strong id="temperature"></strong
                   ><span class="units">°C | <a href="">°F</a></span>
                 </div>
               </div>
@@ -42,9 +43,9 @@
 
             <div class="col-6">
               <ul>
-                <li>Precipitation: 0%</li>
-                <li>Humidity: 34%</li>
-                <li>Wind: 32 km/h</li>
+                <li>Feels like: <span id="feelslike"></span>°</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
               </ul>
             </div>
           </div>

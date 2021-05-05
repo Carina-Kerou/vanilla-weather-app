@@ -47,6 +47,9 @@ footer {
 .basic-info {
   padding-bottom: 20px;
 }
+.description {
+  text-transform: capitalize;
+}
 
 .weather-temperature img {
   margin-right: 10px;
