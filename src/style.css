@@ -34,6 +34,10 @@ footer {
   font-size: 10px;
 }
 
+li:first-letter {
+  text-transform: capitalize;
+}
+
 .weather-app-wrapper {
   max-width: 600px;
   margin: 0 auto;
@@ -46,9 +50,6 @@ footer {
 }
 .basic-info {
   padding-bottom: 20px;
-}
-.description {
-  text-transform: capitalize;
 }
 
 .weather-temperature img {
