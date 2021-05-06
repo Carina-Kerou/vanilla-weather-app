@@ -22,7 +22,6 @@ function formatDate(timestamp) {
 }
 
 function displayTemperature(response) {
-  console.log(response.data);
   let dateElement = document.querySelector("#date");
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   let temperatureElement = document.querySelector("#temperature");
@@ -41,6 +40,5 @@ function displayTemperature(response) {
 
 let apiKey = "dec1516f5dc346e2b00239080e42316d";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Zurich&appid=${apiKey}&units=metric`;
-console.log(apiUrl);
 
 axios.get(apiUrl).then(displayTemperature);
