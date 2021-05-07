@@ -19,7 +19,7 @@ ul {
 
 li {
   list-style: none;
-  color: #757575;
+  color: rgb(90, 149, 173);
   font-size: 12px;
   line-height: 16px;
   padding-left: 9px;
@@ -44,10 +44,24 @@ li:first-letter {
 }
 .weather-app {
   padding: 25px;
-  border: #bdbdbd 1px solid;
+  border: #03506f 1px solid;
   border-radius: 20px;
   background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
+
+.btn {
+  color: #03506f;
+  border: solid 1px #03506f;
+}
+.btn:hover {
+  background: #03506f;
+  border: #03506f;
+  color: #fff;
+}
+.form-control {
+  border: solid 1px #03506f;
+}
+
 .basic-info {
   padding-bottom: 20px;
 }
