@@ -60,6 +60,7 @@ li:first-letter {
 }
 .form-control {
   border: solid 1px #03506f;
+  background: transparent;
 }
 
 .basic-info {
@@ -93,4 +94,27 @@ li:first-letter {
 
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+
+.details {
+  margin-top: 10px;
+}
+
+.weather-forecast {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.weather-forecast-date {
+  font-size: 14px;
+  color: #155263;
+}
+
+.weather-forecast-temperature {
+  font-size: 12px;
+  color: #155263;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.7;
 }
