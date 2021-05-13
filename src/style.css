@@ -19,7 +19,7 @@ ul {
 
 li {
   list-style: none;
-  color: rgb(90, 149, 173);
+  color: #03506f;
   font-size: 12px;
   line-height: 16px;
   padding-left: 9px;
@@ -46,7 +46,7 @@ li:first-letter {
   padding: 25px;
   border: #03506f 1px solid;
   border-radius: 20px;
-  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  background-image: linear-gradient(to top, #fcc29a 0%, #a7efe9 100%);
 }
 
 .btn {
@@ -85,15 +85,6 @@ li:first-letter {
   position: relative;
   font-size: 16px;
   top: -24px;
-}
-
-.weather-temperature .active {
-  color: #155263;
-  cursor: default;
-}
-
-.weather-temperature .active:hover {
-  text-decoration: none;
 }
 
 .details {
